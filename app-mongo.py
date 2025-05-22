@@ -30,7 +30,7 @@ auth_b64 = b64encode(auth_bytes).decode('utf-8')
 headers = {'Authorization': f'Basic {auth_b64}'}
 
 # Configure upload folder for pothole images
-UPLOAD_FOLDER = 'pothole_images'
+UPLOAD_FOLDER = 'static/pothole_images'
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 # Conversation states
